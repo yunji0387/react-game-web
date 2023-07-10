@@ -9,6 +9,7 @@
   position: fixed;
   bottom: 0;
   background-color: rgb(38, 142, 184);
+  z-index: 1;
 }
 
 .social-icon {
