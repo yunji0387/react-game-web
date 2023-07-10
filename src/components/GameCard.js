@@ -4,7 +4,7 @@ import './GameCard.css';
 
 const GameCard = (props) => {
   return (
-    <Link to='/about' className="game-card">
+    <Link to='/game' className="game-card">
       <img className="game-card__image" src={props.imageUrl} alt={props.imgTitle} />
       <div className="game-card__details">
         <h2 className="game-card__title">{props.title}</h2>
