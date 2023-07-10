@@ -1,11 +1,23 @@
 import React from 'react';
 import './Footer.css';
+import SocialIcon from './components/SocialIcon';
+import facebookIcon from './assets/images/facebook.png';
+import twitterIcon from './assets/images/twitter.png';
+import instagramIcon from './assets/images/instagram.png';
+import linkedinIcon from './assets/images/linkedin.png';
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer">
-      <p>&copy; {new Date().getFullYear()} My Web App. All rights reserved.</p>
+        <ul className="social-icon">
+          <p className="social-icon-text">Follow us on: </p>
+          <SocialIcon href="https://www.facebook.com" src={facebookIcon} alt="Facebook Icon" />
+          <SocialIcon href="https://twitter.com/" src={twitterIcon} alt="Twitter Icon" />
+          <SocialIcon href="https://www.linkedin.com/" src={linkedinIcon} alt="LinkedIn Icon" />
+          <SocialIcon href="https://www.instagram.com/" src={instagramIcon} alt="Instagram Icon" />
+        </ul>
+        <p className="footer-text">&copy; {new Date().getFullYear()} Mini Game Web. All rights reserved.</p>
       </div>
     </footer>
   );

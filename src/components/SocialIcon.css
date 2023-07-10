@@ -1,0 +1,18 @@
+.social-icon-img-size {
+  height: 35px;
+  width: 35px;
+}
+
+.social-icon__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  margin: 0 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-5px);
+}
