@@ -1,0 +1,37 @@
+.game-card {
+    width: 300px;
+    background-color: rgb(255, 207, 105);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 30px;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .game-card__details {
+    padding: 16px;
+  }
+  
+  .game-card__title {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .game-card__description {
+    font-size: 18px;
+    color: black;
+    line-height: 1.4;
+  }
+  
