@@ -1,5 +1,8 @@
 .game-card-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: 15px;
+}

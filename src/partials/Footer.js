@@ -17,7 +17,7 @@ const Footer = () => {
           <SocialIcon href="https://www.linkedin.com/" src={linkedinIcon} alt="LinkedIn Icon" />
           <SocialIcon href="https://www.instagram.com/" src={instagramIcon} alt="Instagram Icon" />
         </ul>
-        <p className="footer-text">&copy; {new Date().getFullYear()} Mini Game Web. All rights reserved.</p>
+        <p className="footer-text">&copy; {new Date().getFullYear()} Mini Games Web. All rights reserved.</p>
       </div>
     </footer>
   );

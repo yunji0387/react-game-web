@@ -1,33 +1,36 @@
 .navbar {
-    background: rgb(255, 207, 105);
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 207, 105);
-    display: flex; /* Add this line */
-    justify-content: center; /* Add this line */
-  }
-  
-  .navbar ul li {
-    /* Remove the "float: left" property */
-    display: inline-block; /* Add this line */
-  }
-  
-  .navbar ul li a {
-    display: block;
-    color: rgb(38, 142, 184);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  .navbar ul li a:hover {
-    background-color: #333;
-    color: rgb(255, 207, 105);
-  }
+  background: rgb(255, 207, 105);
+  position: fixed;
+  top: 100px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 207, 105);
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+}
+
+.navbar ul li {
+  /* Remove the "float: left" property */
+  display: inline-block; /* Add this line */
+}
+
+.navbar ul li a {
+  display: block;
+  color: rgb(38, 142, 184);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbar ul li a:hover {
+  background-color: #333;
+  color: rgb(255, 207, 105);
+}
