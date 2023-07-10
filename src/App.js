@@ -1,17 +1,15 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import Header from './partials/Header';
+import Footer from './partials/Footer';
+import Navbar from './partials/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="page">
+    <div>
       <Header />
       <Navbar />
-      <main>
-        {/* Your main content goes here */}
-      </main>
+
       <Footer />
     </div>
   );

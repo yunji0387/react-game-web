@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
-import SocialIcon from './components/SocialIcon';
-import facebookIcon from './assets/images/facebook.png';
-import twitterIcon from './assets/images/twitter.png';
-import instagramIcon from './assets/images/instagram.png';
-import linkedinIcon from './assets/images/linkedin.png';
+import SocialIcon from '../components/SocialIcon';
+import facebookIcon from '../assets/images/facebook.png';
+import twitterIcon from '../assets/images/twitter.png';
+import instagramIcon from '../assets/images/instagram.png';
+import linkedinIcon from '../assets/images/linkedin.png';
 
 const Footer = () => {
   return (
