@@ -12,13 +12,12 @@
   padding: 0;
   overflow: hidden;
   background-color: rgb(255, 207, 105);
-  display: flex; /* Add this line */
-  justify-content: center; /* Add this line */
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul li {
-  /* Remove the "float: left" property */
-  display: inline-block; /* Add this line */
+  display: inline-block;
 }
 
 .navbar ul li a {
