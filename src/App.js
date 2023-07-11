@@ -1,18 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Forum from './pages/Forum';
+import About from './pages/About';
 import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Navbar from './partials/Navbar';
-import GameCardList from './partials/GameCardList';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <Navbar />
-      <GameCardList />
+      <div className='main-content'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/forum' element={<Forum />} />
+          <Route path='/About' element={<About />} />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,8 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 175px;
+  padding-bottom: 150px;
+  width: 100%;
+}
