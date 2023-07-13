@@ -6,6 +6,7 @@ import About from './pages/About';
 import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Navbar from './partials/Navbar';
+import TicTacToe from './games/tictactoe'
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route path='/forum' element={<Forum />} />
           <Route path='/About' element={<About />} />
+          <Route path='/game' element={<TicTacToe />} />
         </Routes>
       </div>
       <Footer />
