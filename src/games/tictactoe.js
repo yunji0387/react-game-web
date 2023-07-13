@@ -4,9 +4,9 @@ import './tictactoe.css';
 
 function Square({ value, onSquareClick }) {
     return (
-        <button className="square" onClick={onSquareClick}>
-            {value}
-        </button>
+        <li className="square" onClick={onSquareClick}>
+            <p className={`square-text ${value === 'X' ? 'text-X' : 'text-O'}`}>{value}</p>
+        </li>
     );
 }
 
@@ -45,16 +45,21 @@ function Board({ xIsNext, squares, onPlay }) {
     }
 
     const winner = calculateWinner(squares);
-    let status;
+    let status, nextPlayer;
     if (winner) {
-        status = "Winner: " + winner;
+        status = "Winner : ";
+        nextPlayer = winner;
     } else {
-        status = "Next player: " + (xIsNext ? "X" : "O");
+        status = "Next player: ";
+        nextPlayer = (xIsNext ? "X" : "O");
     }
 
     return (
         <div>
-            <div className="status">{status}</div>
+            <div className="status-text">
+                {status}
+                <span className={nextPlayer === 'X' ? 'text-X' : 'text-O'}>{nextPlayer}</span>
+            </div>
             <div className="board-row">
                 <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
                 <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -95,7 +100,7 @@ function Game() {
                 <Board xIsNext={xIsNext} squares={squares} onPlay={handlePlay} />
             </div>
             <div className="game-info">
-                <button className="" onClick={resetGame}>
+                <button className="reset" onClick={resetGame}>
                     Reset
                 </button>
             </div>

@@ -1,0 +1,64 @@
+.game {
+  background-color: rgb(0, 110, 153);
+  border-radius: 10px;
+  box-shadow: 0 0 0 10px rgb(243, 187, 65);
+  border: 1px solid rgb(0, 110, 153);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  list-style: none;
+  background-color: rgb(255, 248, 226);
+  border: 5px solid rgb(2, 55, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-text {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.status-text {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.text-X {
+  color: blue;
+}
+
+.text-O {
+  color: red;
+}
+
+.board-row {
+  display: flex;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  margin: 10px;
+  height: 75px;
+  width: 150px;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(2, 55, 77);
+  background-color: rgb(243, 187, 65);
+}
+
+.reset:hover {
+  background-color: rgb(220, 160, 40);
+}
