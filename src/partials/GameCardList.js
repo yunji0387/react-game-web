@@ -9,6 +9,8 @@ const GameCardList = () => {
             {gameList.map((game, index) => (
                 <GameCard
                     key={index}
+                    url={game.url}
+                    isAvailable={game.isAvailable}
                     title={game.title}
                     description={game.description}
                     imageUrl={game.imageUrl}

@@ -1,7 +1,7 @@
 import tictactoe from './images/tictactoe.png';
 import rockpaperscissor from './images/rockpaperscissor.png';
-import drumkit from './images/drumkit.png';
-import empty from './images/empty.png';
+import drumkit from './images/drumKit/drumKitTitle.png';
+import comingSoon from './images/comingSoon.png';
 
 const games = [
     {
@@ -9,48 +9,64 @@ const games = [
         description: 'The classic 3 x 3 Tic Tac Toe',
         imageUrl: tictactoe,
         imgTitle: 'tictactoe',
+        url: "/tictactoe",
+        isAvailable: true
     },
     {
         title: 'Rock Paper Scissors',
         description: 'The classic Rock Paper Scissors',
         imageUrl: rockpaperscissor,
         imgTitle: 'rockpaperscissor',
+        url: '/rockpaperscissor',
+        isAvailable: true
     },
     {
         title: 'Drum Kit',
         description: 'Playing drum with your keyboard',
         imageUrl: drumkit,
         imgTitle: 'drumkit',
+        url: '/drumkit',
+        isAvailable: true
     },
     {
         title: 'Chess',
         description: 'The classic Chess',
-        imageUrl: empty,
+        imageUrl: comingSoon,
         imgTitle: 'chess',
+        url: '/chess',
+        isAvailable: false
     },
     {
         title: 'Checker',
         description: 'The classic checker',
-        imageUrl: empty,
+        imageUrl: comingSoon,
         imgTitle: 'checker',
+        url: '/checker',
+        isAvailable: false
     },
     {
         title: '2D Ping Pong',
         description: 'The classic 2D Ping Pong',
-        imageUrl: empty,
+        imageUrl: comingSoon,
         imgTitle: 'pingpong',
+        url: '/pingpong',
+        isAvailable: false
     },
     {
         title: 'Snake',
         description: 'The classic Snake',
-        imageUrl: empty,
+        imageUrl: comingSoon,
         imgTitle: 'snake',
+        url: '/snake',
+        isAvailable: false
     },
     {
         title: 'Tank War',
         description: '2D Tank War game',
-        imageUrl: empty,
+        imageUrl: comingSoon,
         imgTitle: 'tankwar',
+        url: '/tankwar',
+        isAvailable: false
     }
 ];
 

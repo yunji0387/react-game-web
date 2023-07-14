@@ -7,6 +7,7 @@ import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Navbar from './partials/Navbar';
 import TicTacToe from './games/tictactoe'
+import DrumKit from './games/drumkit';
 import './App.css';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route path='/forum' element={<Forum />} />
           <Route path='/About' element={<About />} />
-          <Route path='/game' element={<TicTacToe />} />
+          <Route path='/tictactoe' element={<TicTacToe />} />
+          <Route path='/drumkit' element={<DrumKit />} />
         </Routes>
       </div>
       <Footer />
