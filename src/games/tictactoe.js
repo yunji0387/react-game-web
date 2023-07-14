@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './tictactoe.css';
+import './game.css';
 
 function Square({ value, onSquareClick }) {
     return (
@@ -95,14 +96,14 @@ function Game() {
     }
 
     return (
-        <div className="game">
+        <div className="game container">
             <div className="game-board">
                 <Board xIsNext={xIsNext} squares={squares} onPlay={handlePlay} />
-            </div>
-            <div className="game-info">
-                <button className="reset" onClick={resetGame}>
-                    Reset
-                </button>
+                <div className="game-info">
+                    <button className="reset" onClick={resetGame}>
+                        Reset
+                    </button>
+                </div>
             </div>
         </div>
     );

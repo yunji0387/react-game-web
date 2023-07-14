@@ -1,0 +1,76 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 5rem;
+  color: rgb(255, 243, 218);
+  font-family: "Arvo", cursive;
+  font-weight: bolder;
+  text-shadow: 3px 0 #4d4a3d;
+  margin: 0;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid rgb(24, 23, 23);
+  font-size: 3rem;
+  font-family: "Arvo", cursive;
+  /* line-height: 2; */
+  font-weight: bolder;
+  color: rgb(255, 243, 218);
+  text-shadow: 3px 0 #4d4a3d;
+  border-radius: 15px;
+  /* display: inline-block; */
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(228, 226, 226);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.w {
+  background-image: url("../assets/images/drumKit/tomDrum.png");
+}
+
+.a {
+  background-image: url("../assets/images/drumKit/tomDrum.png");
+}
+
+.s {
+  background-image: url("../assets/images/drumKit/tomDrum2.png");
+}
+
+.d {
+  background-image: url("../assets/images/drumKit/tomDrum2.png");
+}
+
+.j {
+  background-image: url("../assets/images/drumKit/crash.png");
+}
+
+.k {
+  background-image: url("../assets/images/drumKit/kick.png");
+}
+
+.l {
+  background-image: url("../assets/images/drumKit/snare.png");
+}
+
+.set {
+  /* margin: 10% auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
