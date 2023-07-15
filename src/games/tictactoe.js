@@ -97,6 +97,9 @@ function Game() {
 
     return (
         <div className="game container">
+            <p className="tictactoe-title">
+                Tic Tac Toe
+            </p>
             <div className="game-board">
                 <Board xIsNext={xIsNext} squares={squares} onPlay={handlePlay} />
                 <div className="game-info">

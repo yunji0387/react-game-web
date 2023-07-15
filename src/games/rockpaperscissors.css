@@ -1,0 +1,123 @@
+.rps-game {
+  min-width: 600px;
+  min-height: 635px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rps-title {
+  font-size: 3rem;
+  color: rgb(255, 243, 218);
+  font-family: "Arvo", cursive;
+  font-weight: bolder;
+  text-shadow: 3px 0 #4d4a3d;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.rps-result {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.choice-container {
+  display: flex;
+  margin-top: -20px;
+}
+
+.choice {
+  border: 10px solid rgb(37, 64, 90);
+  border-radius: 15px;
+  background-color: rgb(211, 220, 228);
+  color: rgb(33, 49, 63);
+  width: 150px;
+  height: 250px;
+  padding: 10px 50px;
+  margin: 20px 10px;
+}
+
+.rps-win-choice {
+  border: 10px solid rgb(255, 202, 87);
+  border-radius: 15px;
+  background-color: rgb(233, 239, 245);
+}
+
+.rps-lose-choice {
+  border: 10px solid rgb(20, 29, 37);
+  border-radius: 15px;
+  background-color: rgb(134, 142, 150);
+}
+
+.rps-choice-text {
+  margin-left: -30px;
+  margin-right: -25px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.choice-img {
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: -35px;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.player-choice {
+  float: left;
+}
+
+.computer-choice {
+  float: right;
+}
+
+.rps-button-choice {
+  margin: 10px;
+}
+
+.rps-button {
+  margin: 10px 30px;
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(57, 116, 134);
+  border: 10px solid rgb(230, 212, 113);
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: "Arvo", cursive;
+  font-weight: bolder;
+  color: rgb(255, 243, 218);
+  text-shadow: 3px 0 #4d4a3d;
+  transition: 0.1s;
+}
+
+.rps-button:hover {
+  background-color: rgb(77, 160, 185);
+  border: 10px solid rgb(250, 242, 199);
+  width: 150px;
+  height: 150px;
+  font-size: 25px;
+  transform:translateY(-25px);
+  margin-bottom: -80px;
+  padding-bottom: -100px;
+}
+
+.rock-button {
+  background-image: url("../assets/images/rockPaperScissor/rock.png");
+}
+
+.paper-button {
+  background-image: url("../assets/images/rockPaperScissor/paper.png");
+}
+
+.scissor-button {
+  background-image: url("../assets/images/rockPaperScissor/scissor.png");
+}

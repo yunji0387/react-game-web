@@ -24,3 +24,29 @@
   height: 100px;
   width: 100px;
 }
+
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 33px;
+  }
+
+  .header-img-size {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-height: 600px), (max-width: 600px) {
+  .header {
+    height: 60px;
+  }
+
+  .header-text {
+    font-size: 33px;
+  }
+
+  .header-img-size {
+    height: 60px;
+    width: 60px;
+  }
+}

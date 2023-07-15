@@ -78,7 +78,7 @@ function Game() {
 
   return (
     <div className="game container">
-      <p className="title" id="title">
+      <p className="drumkit-title">
         Drum Kit
       </p>
       <div className="set">

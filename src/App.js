@@ -7,6 +7,7 @@ import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Navbar from './partials/Navbar';
 import TicTacToe from './games/tictactoe'
+import RockPaperScissor from './games/rockpaperscissors'
 import DrumKit from './games/drumkit';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/forum' element={<Forum />} />
           <Route path='/About' element={<About />} />
           <Route path='/tictactoe' element={<TicTacToe />} />
+          <Route path='/rockpaperscissor' element={<RockPaperScissor />} />
           <Route path='/drumkit' element={<DrumKit />} />
         </Routes>
       </div>

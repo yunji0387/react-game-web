@@ -7,6 +7,15 @@
   align-items: center;
 }
 
+.tictactoe-title {
+  font-size: 5rem;
+  color: rgb(255, 243, 218);
+  font-family: "Arvo", cursive;
+  font-weight: bolder;
+  text-shadow: 3px 0 #4d4a3d;
+  margin: 0;
+}
+
 .square {
   height: 100px;
   width: 100px;

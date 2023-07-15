@@ -10,9 +10,17 @@
 .social-icon__link {
   margin: 0 20px;
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .social-icon__link:hover {
-  transform: translateY(-5px);
+  transform:  scale(2.0);
+}
+
+@media (max-height: 600px), (max-width: 600px) {
+  .social-icon-img-size {
+    padding-top: 3px;
+    height: 25px;
+    width: 25px;
+  }
 }
