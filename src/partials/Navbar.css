@@ -35,7 +35,6 @@
 .navbar ul li a:hover {
   background-color: #333;
   color: rgb(255, 207, 105);
-  /* transform: scale(1.5); */
   font-size: 50px;
   margin-top: -18px;
   padding-bottom: 23px;
@@ -49,5 +48,11 @@
   .navbar ul li a {
     height: 25px;
     font-size: 18px;
+  }
+
+  .navbar ul li a:hover {
+    font-size: 30px;
+    margin-top: -8px;
+    margin-bottom: -15px;
   }
 }
