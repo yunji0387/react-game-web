@@ -5,4 +5,14 @@
   padding-top: 175px;
   padding-bottom: 150px;
   width: 100%;
+  min-width: 600px;
+}
+
+@media (max-height: 600px), (max-width: 600px) {
+  .main-content {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

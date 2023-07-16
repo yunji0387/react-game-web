@@ -8,10 +8,13 @@ import tom4Sound from '../assets/audios/tom-4.mp3';
 import crashSound from '../assets/audios/crash.mp3';
 import kickBassSound from '../assets/audios/kick-bass.mp3';
 import snareSound from '../assets/audios/snare.mp3';
-
+import drumScoreBoardImg from '../assets/images/drumKit/drumScoreBoard.png';
 
 function Game() {
+  const validKey = ['w', 'a', 's', 'd', 'j', 'k', 'l'];
   const [currentKey, setCurrentKey] = useState('');
+  const [history, setHistory] = useState([]);
+  const [hitCounter, setHitCounter] = useState(0);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
@@ -23,11 +26,15 @@ function Game() {
   const handleKeyDown = (event) => {
     makeSound(event.key);
     buttonAnimation(event.key);
+    updateHistory(event.key);
+    updateCounter(event.key);
   };
 
   const handleClick = (event) => {
     makeSound(event.target.innerHTML);
     buttonAnimation(event.target.innerHTML);
+    updateHistory(event.target.innerHTML);
+    updateCounter(event.target.innerHTML);
   };
 
   const makeSound = (key) => {
@@ -74,33 +81,59 @@ function Game() {
         activeButton.classList.remove('pressed');
       }, 100);
     }
-  };  
+  };
+
+  const updateHistory = (key) => {
+    if (validKey.includes(key)) {
+      setHistory((prevHistory) => {
+        const updatedHistory = [...prevHistory, key];
+        if (updatedHistory.length > 10) {
+          updatedHistory.shift();
+        }
+        return updatedHistory;
+      });
+    }
+  };
+
+  const updateCounter = (key) => {
+    if (validKey.includes(key) && hitCounter < 1000) {
+      setHitCounter((prevCounter) => prevCounter + 1);
+    }
+  };
 
   return (
     <div className="game container">
-      <p className="drumkit-title">
-        Drum Kit
-      </p>
-      <div className="set">
-        <button className="w drum" onClick={handleClick}>
+      <p className="drumkit-title">Drum Kit</p>
+      <div className="drumkit-history">
+        <div className="drumkit-scoreBoard">
+          <p className="drumkit-scoreBoard-text">{hitCounter >= 1000 ? 'MAX' : hitCounter}</p>
+        </div>
+        <ul>
+          {history.map((key, index) => (
+            <li className={key} key={index}></li>
+          ))}
+        </ul>
+      </div>
+      <div className="drum-set">
+        <button className="w drum-button" onClick={handleClick}>
           w
         </button>
-        <button className="a drum" onClick={handleClick}>
+        <button className="a drum-button" onClick={handleClick}>
           a
         </button>
-        <button className="s drum" onClick={handleClick}>
+        <button className="s drum-button" onClick={handleClick}>
           s
         </button>
-        <button className="d drum" onClick={handleClick}>
+        <button className="d drum-button" onClick={handleClick}>
           d
         </button>
-        <button className="j drum" onClick={handleClick}>
+        <button className="j drum-button" onClick={handleClick}>
           j
         </button>
-        <button className="k drum" onClick={handleClick}>
+        <button className="k drum-button" onClick={handleClick}>
           k
         </button>
-        <button className="l drum" onClick={handleClick}>
+        <button className="l drum-button" onClick={handleClick}>
           l
         </button>
       </div>
