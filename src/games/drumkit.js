@@ -102,7 +102,7 @@ function Game() {
   };
 
   return (
-    <div className="game container">
+    <div className="drumkit-game container">
       <p className="drumkit-title">Drum Kit</p>
       <div className="drumkit-history">
         <div className="drumkit-scoreBoard">

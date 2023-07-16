@@ -1,8 +1,10 @@
-.game {
+.drumkit-game {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 600px;
   min-width: 600px;
+  height: 600px;
 }
 
 .drumkit-title {
@@ -11,7 +13,8 @@
   color: rgb(255, 243, 218);
   font-family: "Arvo", cursive;
   font-weight: bolder;
-  text-shadow: 3px 0 #4d4a3d;
+  text-align: center;
+  text-shadow: 10px 0 #4d4a3d;
   margin: 0;
 }
 
@@ -33,6 +36,7 @@
   height: 70px;
   min-width: 70px;
   padding: 10px;
+  margin-left: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,11 +52,9 @@
 
 .drumkit-history ul {
   list-style-type: none;
-  margin-left: 10px;
   padding: 0;
   display: flex; 
   align-items: center;
-
 }
 
 .drumkit-history ul li {
@@ -85,10 +87,11 @@
   color: rgb(255, 243, 218);
   text-shadow: 3px 0 #4d4a3d;
   border-radius: 15px;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   text-align: center;
   margin: 5px;
+  margin-top: 50px;
   background-color: rgb(228, 226, 226);
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,9 +106,6 @@
 .pressed {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
-}
-
-@media (max-width: 600px) {
 }
 
 .w {

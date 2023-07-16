@@ -96,7 +96,7 @@ function Game() {
     }
 
     return (
-        <div className="game container">
+        <div className="tictactoe-game container">
             <p className="tictactoe-title">
                 Tic Tac Toe
             </p>

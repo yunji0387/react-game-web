@@ -1,6 +1,7 @@
 .rps-game {
+  width: 600px;
   min-width: 600px;
-  min-height: 635px;
+  height: 635px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@
   color: rgb(255, 243, 218);
   font-family: "Arvo", cursive;
   font-weight: bolder;
-  text-shadow: 3px 0 #4d4a3d;
+  text-shadow: 10px 0 #4d4a3d;
   margin: 0;
   padding-top: 10px;
 }
