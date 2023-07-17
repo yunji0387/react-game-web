@@ -104,7 +104,7 @@ function Game() {
                 <Board xIsNext={xIsNext} squares={squares} onPlay={handlePlay} />
                 <div className="game-info">
                     <button className="reset" onClick={resetGame}>
-                        Reset
+                        Play Again
                     </button>
                 </div>
             </div>
