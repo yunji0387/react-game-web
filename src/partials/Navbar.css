@@ -21,7 +21,10 @@
 }
 
 .navbar ul li a {
-  display: block;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(38, 142, 184);
   text-align: center;
   padding: 5px 50px;
@@ -36,8 +39,9 @@
   background-color: #333;
   color: rgb(255, 207, 105);
   font-size: 50px;
-  margin-top: -18px;
-  padding-bottom: 23px;
+  /* padding: 5px 50px; */
+  /* margin-top: -18px; */
+  /* padding-bottom: 23px; */
 }
 
 @media (max-height: 600px), (max-width: 700px) {
@@ -52,8 +56,8 @@
 
   .navbar ul li a:hover {
     font-size: 30px;
-    margin-top: -8px;
-    margin-bottom: -15px;
+    /* margin-top: -8px; */
+    /* margin-bottom: -15px; */
   }
 }
 
@@ -70,6 +74,7 @@
 
   .navbar ul li a:hover {
     font-size: 25px;
-    margin-top: -8px;
+    /* padding: 5px 30px; */
+    /* margin-top: -8px; */
   }
 }
