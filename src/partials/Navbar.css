@@ -56,3 +56,20 @@
     margin-bottom: -15px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    top: 40px;
+  }
+
+  .navbar ul li a {
+    height: 20px;
+    font-size: 15px;
+    padding: 5px 30px;
+  }
+
+  .navbar ul li a:hover {
+    font-size: 25px;
+    margin-top: -8px;
+  }
+}
