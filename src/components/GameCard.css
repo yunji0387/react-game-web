@@ -54,7 +54,7 @@
   line-height: 1.4;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px), (max-height: 750px) {
   .game-card {
     width: 150px;
     height: 250px;
