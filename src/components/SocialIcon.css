@@ -22,7 +22,7 @@
   width: 65px;
 }
 
-@media (max-height: 600px), (max-width: 600px) {
+@media (max-height: 750px), (max-width: 600px) {
   .social-icon-img-size {
     padding-top: 3px;
     height: 25px;

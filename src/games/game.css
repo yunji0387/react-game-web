@@ -6,9 +6,28 @@
   transition: 0.1s;
 }
 
-@media (max-width: 900px) {
+
+@media (max-height: 920px){
   .container {
-    /* transform:scale(1.35); */
+    transform:translateY(-20px) scale(0.95);
+  }
+}
+
+@media (max-height: 900px){
+  .container {
+    transform:translateY(-50px) scale(0.85);
+  }
+}
+
+@media (max-height: 800px){
+  .container {
+    transform:translateY(-80px) scale(0.75);
+  }
+}
+
+@media (max-height: 750px) {
+  .container {
+    transform:translateY(-155px) scale(0.65);
   }
 }
 
