@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Forum from './pages/Forum';
 import About from './pages/About';
@@ -13,21 +13,21 @@ import './App.css';
 
 function App() {
   return (
-    <HashRouter>
+    <>
       <Header />
       <Navbar />
       <div className='main-content'>
         <Routes>
-          <Route exact path='/react-game-web' element={<Home />} />
-          <Route path='/react-game-web/forum' element={<Forum />} />
-          <Route path='/react-game-web/About' element={<About />} />
-          <Route path='/react-game-web/tictactoe' element={<TicTacToe />} />
-          <Route path='/react-game-web/rockpaperscissor' element={<RockPaperScissor />} />
-          <Route path='/react-game-web/drumkit' element={<DrumKit />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/forum' element={<Forum />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/tictactoe' element={<TicTacToe />} />
+          <Route path='/rockpaperscissor' element={<RockPaperScissor />} />
+          <Route path='/drumkit' element={<DrumKit />} />
         </Routes>
       </div>
       <Footer />
-    </HashRouter>
+    </>
   );
 }
 
