@@ -18,12 +18,12 @@ function App() {
       <Navbar />
       <div className='main-content'>
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/forum' element={<Forum />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/tictactoe' element={<TicTacToe />} />
-          <Route path='/rockpaperscissor' element={<RockPaperScissor />} />
-          <Route path='/drumkit' element={<DrumKit />} />
+          <Route exact path='/react-game-web' element={<Home />} />
+          <Route path='/react-game-web/forum' element={<Forum />} />
+          <Route path='/react-game-web/About' element={<About />} />
+          <Route path='/react-game-web/tictactoe' element={<TicTacToe />} />
+          <Route path='/react-game-web/rockpaperscissor' element={<RockPaperScissor />} />
+          <Route path='/react-game-web/drumkit' element={<DrumKit />} />
         </Routes>
       </div>
       <Footer />
